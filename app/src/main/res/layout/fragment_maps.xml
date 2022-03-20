@@ -12,8 +12,8 @@
         android:layout_height="662dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="OPCIONES"
+            android:text="@string/opciones"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnMover"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="ANIMAR"
+            android:text="@string/animar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnPosicion"
             app:layout_constraintStart_toEndOf="@+id/btnMover"
@@ -54,23 +54,36 @@
             android:layout_width="94dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="POSICI"
+            android:text="@string/pos"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btnAnimar"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/btnMover"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="MOVER"
+            android:text="@string/mover"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnAnimar"
             app:layout_constraintStart_toEndOf="@+id/btnOpciones"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnMarcador"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="btnvista"
+        android:text="puntero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
